@@ -13,14 +13,17 @@
         </div>
         <div class="mb-3">
             <select class="form-select" aria-label="Default select example">
-                <option selected>Gender</option>
                 <option value="1">Male</option>
-                <option value="2">Female</option>
+                <option value="0">Female</option>
             </select>
         </div>
         <div class="mb-3">
             <input type="password" id="password" placeholder="Password" class="form-control"
                 [(ngModel)]="signupData.password">
+        </div>
+        <div class="mb-3">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" class="form-control"
+                [(ngModel)]="signupData.confirmPassword">
         </div>
         <p class="text-danger error" *ngIf="errorMessage">*{{errorMessage}}</p>
         <button class="btn btn-primary ms-auto d-block" (click)="handleSignup()">Signup</button>

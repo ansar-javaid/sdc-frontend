@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthenticationModule } from './features/authentication/authentication.module';
 import { BuildResumeModule } from './features/build-resume/build-resume.module';
 import { ViewResumeModule } from './features/view-resume/view-resume.module';
+import { AuthModule } from './auth.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ViewResumeModule } from './features/view-resume/view-resume.module';
     BrowserAnimationsModule,
     AuthenticationModule,
     BuildResumeModule,
-    ViewResumeModule
+    ViewResumeModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

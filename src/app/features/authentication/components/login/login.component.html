@@ -3,14 +3,13 @@
         <p class="text-center h1 mb-3">Login</p>
         <a class="text-primary text-center d-block mb-4" [routerLink]="'/signup'">Need an account?</a>
         <div class="mb-3">
-            <input type="email" id="email" placeholder="Email" class="form-control" [(ngModel)]="loginData.email">
-            <p class="text-danger input-error" *ngIf="!loginData.email && submitted">Email is required</p>
+            <input type="email" id="email" placeholder="Email" class="form-control" [(ngModel)]="email">
         </div>
         <div class="mb-3">
-            <input type="password" id="password" placeholder="Password" class="form-control" [(ngModel)]="loginData.password">
-            <p class="text-danger input-error" *ngIf="loginData.password.length <= 8 && submitted">Password should be greater than 8 characters</p>
+            <input type="password" id="password" placeholder="Password" class="form-control" [(ngModel)]="password">
+            <p class="text-danger input-error" *ngIf="errorMessage">*{{errorMessage}}</p>
         </div>
         <a class="text-primary d-block mb-4" [routerLink]="'/forgot-password'">Forgot Password?</a>
-        <button class="btn btn-primary ms-auto d-block" (click)="handleLogin()">Login</button>
+        <button class="btn btn-primary ms-auto d-block" (click)="login()">Login</button>
     </div>
 </div>

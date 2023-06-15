@@ -8,7 +8,8 @@ export interface IUserSignup {
     lastName: string,
     gender: number,
     email: string,
-    password: string
+    password: string,
+    confirmPassword: string
 }
 
 export interface IChangePassword {

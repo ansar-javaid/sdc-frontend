@@ -11,6 +11,8 @@ import { SkillsComponent } from './components/stepper-components/skills/skills.c
 import { CertificationComponent } from './components/stepper-components/certification/certification.component';
 import { AwardsComponent } from './components/stepper-components/awards/awards.component';
 import { ReferencesComponent } from './components/stepper-components/references/references.component';
+import { AuthGuard } from 'src/app/auth/auth.guard';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -29,6 +31,8 @@ import { ReferencesComponent } from './components/stepper-components/references/
     CommonModule,
     FormsModule,
     MatStepperModule,
-  ]
+    AppRoutingModule
+  ],
+  providers: [AuthGuard], 
 })
 export class BuildResumeModule { }
