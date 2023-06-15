@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IPersonal } from '../../../models/resume.model';
+import { IPersonal } from '../../../../models/resume.model';
 
 @Component({
   selector: 'app-personal',

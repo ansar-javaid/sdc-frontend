@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IEducation } from '../../../models/resume.model';
+import { IEducation } from '../../../../models/resume.model';
 
 @Component({
   selector: 'app-education',
