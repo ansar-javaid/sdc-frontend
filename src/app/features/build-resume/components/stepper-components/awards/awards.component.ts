@@ -10,12 +10,12 @@ export class AwardsComponent {
   @Input() heading: string = '';
   public dummyCertificationData: IAwards =  {
     awardName: '',
-    year: ''
+    description: ''
   }
   public certificationData: Array<IAwards> = [
     {
       awardName: '',
-      year: ''
+      description: ''
     }
   ]
 

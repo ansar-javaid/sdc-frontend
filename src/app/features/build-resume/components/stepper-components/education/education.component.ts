@@ -11,6 +11,7 @@ export class EducationComponent {
   public dummyEducationData: IEducation =  {
     instituteName: '',
     major: '',
+    marks: '',
     startYear: '',
     endYear: ''
   }
@@ -18,6 +19,7 @@ export class EducationComponent {
     {
       instituteName: '',
       major: '',
+      marks: '',
       startYear: '',
       endYear: ''
     }

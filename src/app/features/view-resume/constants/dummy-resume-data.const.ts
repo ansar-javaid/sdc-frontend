@@ -2,9 +2,9 @@ import { IResume } from "../../models/resume.model";
 
 export const dummyResumeData: IResume = {
     personalInformation: {
-        firstName: 'Rabbaniyeh',
-        lastName: 'Neakakhter',
-        city: 'Mansehra',
+        email: 'Rabbaniyeh',
+        address: 'Neakakhter',
+        registrationNumber: 'Mansehra',
         phoneNumber: '03312387222',
         website: 'www.rabbaniyeh.com',
         linkedIn: 'www.linkedin.com',
@@ -14,18 +14,21 @@ export const dummyResumeData: IResume = {
         {
             instituteName: 'Comsats University Islamabad',
             major: 'BS in Computer Science',
+            marks: '3.4',
             startYear: '2019',
             endYear: '2023'
         },
         {
             instituteName: 'Comsats University Islamabad',
             major: 'BS in Computer Science',
+            marks: '3.4',
             startYear: '2019',
             endYear: '2023'
         },
         {
             instituteName: 'Comsats University Islamabad',
             major: 'BS in Computer Science',
+            marks: '3.4',
             startYear: '2019',
             endYear: '2023'
         }
@@ -34,18 +37,21 @@ export const dummyResumeData: IResume = {
         {
             companyName: 'Techietex',
             jobTitle: 'Angular Developer',
+            jobDescription: 'Angular Developer',
             startYear: '2022',
             endYear: 'Present'
         },
         {
             companyName: 'Techietex',
             jobTitle: 'Angular Developer',
+            jobDescription: 'Angular Developer',
             startYear: '2022',
             endYear: 'Present'
         },
         {
             companyName: 'Techietex',
             jobTitle: 'Angular Developer',
+            jobDescription: 'Angular Developer',
             startYear: '2022',
             endYear: 'Present'
         }
@@ -53,15 +59,15 @@ export const dummyResumeData: IResume = {
     awards: [
         {
             awardName: 'Speed Coding',
-            year: '2022',
+            description: '2022',
         },
         {
             awardName: 'Speed Coding',
-            year: '2022',
+            description: '2022',
         },
         {
             awardName: 'Speed Coding',
-            year: '2022',
+            description: '2022',
         }
     ],
     certifications: [

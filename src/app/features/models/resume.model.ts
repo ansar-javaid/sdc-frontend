@@ -9,9 +9,9 @@ export interface IResume {
 }
 
 export interface IPersonal {
-    firstName: string;
-    lastName: string;
-    city: string;
+    email: string;
+    registrationNumber: string;
+    address: string;
     phoneNumber: string;
     linkedIn?: string;
     website?: string;
@@ -21,6 +21,7 @@ export interface IPersonal {
 export interface IEducation {
     instituteName: string;
     major: string;
+    marks: string;
     startYear: string;
     endYear: string;
 }
@@ -28,6 +29,7 @@ export interface IEducation {
 export interface IWork {
     companyName: string;
     jobTitle: string;
+    jobDescription: string;
     startYear: string;
     endYear: string;
 }
@@ -44,7 +46,7 @@ export interface ICertification {
 
 export interface IAwards {
     awardName: string;
-    year: string;
+    description: string;
 }
 
 export interface IReferences {

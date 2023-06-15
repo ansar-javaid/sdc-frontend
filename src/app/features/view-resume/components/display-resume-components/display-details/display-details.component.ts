@@ -61,7 +61,7 @@ export class DisplayDetailsComponent {
 
   private setAwardsData(data: IAwards): void {
     this.title = data.awardName;
-    this.endYear = data.year;
+    this.endYear = data.description;
   }
 
   private setReferencesData(data: IReferences): void {

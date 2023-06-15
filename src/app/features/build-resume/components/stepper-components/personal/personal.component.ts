@@ -9,12 +9,22 @@ import { IPersonal } from '../../../../models/resume.model';
 export class PersonalComponent {
   @Input() heading: string = '';
   public personalData: IPersonal = {
-    firstName: '',
-    lastName: '',
-    city: '',
+    email: '',
+    registrationNumber: '',
+    address: '',
     phoneNumber: '',
     linkedIn: '',
     website: '',
     summary: ''
+  }
+
+  public declare image: File;
+
+  public onImageUpload(event: any): void {
+    this.image = event.target.files[0]
+  }
+
+  public uploadImage(): void {
+    //Upload image logic
   }
 }

@@ -11,6 +11,7 @@ export class WorkComponent {
   public dummyEducationData: IWork =  {
     companyName: '',
     jobTitle: '',
+    jobDescription: '',
     startYear: '',
     endYear: ''
   }
@@ -18,6 +19,7 @@ export class WorkComponent {
     {
       companyName: '',
       jobTitle: '',
+      jobDescription: '',
       startYear: '',
       endYear: ''
     }
